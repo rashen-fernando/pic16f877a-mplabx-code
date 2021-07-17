@@ -1,0 +1,42 @@
+MPLINK 5.08, LINKER
+Linker Map File - Created Sun Nov 22 17:27:18 2020
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x00003c
+                   .cinit    romdata   0x00001e    program   0x000004
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x00001f      
+            32 out of 8454 program addresses used, program memory utilization is 0%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                     Main   0x000001    program     static C:\Users\acer\MPLABXProjects\LAB_3.X\Instruction_sheet_1.asm
+                      adc   0x000012    program     static C:\Users\acer\MPLABXProjects\LAB_3.X\Instruction_sheet_1.asm
+                    delay   0x00001b    program     static C:\Users\acer\MPLABXProjects\LAB_3.X\Instruction_sheet_1.asm
+                    loop1   0x00000d    program     static C:\Users\acer\MPLABXProjects\LAB_3.X\Instruction_sheet_1.asm
+                    loop2   0x00001b    program     static C:\Users\acer\MPLABXProjects\LAB_3.X\Instruction_sheet_1.asm
+                     wait   0x000014    program     static C:\Users\acer\MPLABXProjects\LAB_3.X\Instruction_sheet_1.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                     Main   0x000001    program     static C:\Users\acer\MPLABXProjects\LAB_3.X\Instruction_sheet_1.asm
+                    loop1   0x00000d    program     static C:\Users\acer\MPLABXProjects\LAB_3.X\Instruction_sheet_1.asm
+                      adc   0x000012    program     static C:\Users\acer\MPLABXProjects\LAB_3.X\Instruction_sheet_1.asm
+                     wait   0x000014    program     static C:\Users\acer\MPLABXProjects\LAB_3.X\Instruction_sheet_1.asm
+                    delay   0x00001b    program     static C:\Users\acer\MPLABXProjects\LAB_3.X\Instruction_sheet_1.asm
+                    loop2   0x00001b    program     static C:\Users\acer\MPLABXProjects\LAB_3.X\Instruction_sheet_1.asm
+
+

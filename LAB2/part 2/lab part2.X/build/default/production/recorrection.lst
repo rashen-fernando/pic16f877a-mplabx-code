@@ -1,0 +1,263 @@
+MPASM 5.76                  RECORRECTION.ASM   12-11-2020  1:07:50         PAGE  1
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+Warning[205]: Found directive in column 1. (processor)
+                      00001 processor 16f84a
+                      00002     #include<p16f84a.inc>
+                      00001         LIST
+                      00002 
+                      00003 ;==========================================================================
+                      00004 ; Build date : Sep 19 2017
+                      00005 ;  MPASM PIC16F84A processor include
+                      00006 ; 
+                      00007 ;  (c) Copyright 1999-2017 Microchip Technology, All rights reserved
+                      00008 ;==========================================================================
+                      00009 
+                      00209         LIST
+                      00003     org 0x00
+Warning[207]: Found label after column 1. (COUNT1)
+  00000030            00004     COUNT1 equ 30h
+Warning[207]: Found label after column 1. (COUNT2)
+  00000031            00005     COUNT2 equ 31h
+Warning[207]: Found label after column 1. (COUNTA)
+  00000034            00006     COUNTA equ 34h
+Warning[207]: Found label after column 1. (COUNTB)
+  00000035            00007     COUNTB equ 35h
+Warning[207]: Found label after column 1. (INTCON)
+  0000000B            00008     INTCON equ 0Bh
+Warning[207]: Found label after column 1. (STATUS)
+  00000003            00009     STATUS equ 03h
+                      00010  
+Warning[207]: Found label after column 1. (TRISA)
+  00000085            00011     TRISA equ 85h
+Warning[207]: Found label after column 1. (PORTA)
+  00000005            00012     PORTA equ 05h
+                      00013  
+Warning[207]: Found label after column 1. (TRISB)
+  00000086            00014     TRISB equ 86h
+Warning[207]: Found label after column 1. (PORTB)
+  00000006            00015     PORTB equ 06h
+                      00016  
+Warning[207]: Found label after column 1. (TEMP)
+  00000020            00017     TEMP equ 20h
+0000   2???           00018     goto Main
+                      00019     
+                      00020     org 0x04
+0004   00A0           00021         movwf   TEMP
+0005   2???           00022         call    led
+0006   108B           00023         bcf         INTCON,1
+0007   0009           00024         retfie
+                      00025     
+Warning[207]: Found label after column 1. (Main)
+0008                  00026     Main:
+                      00027     ;setting up ports
+0008   3000           00028         movlw   b'00000'
+0009   0085           00029         movwf   PORTA
+000A   178B           00030         bsf     INTCON,7
+MPASM 5.76                  RECORRECTION.ASM   12-11-2020  1:07:50         PAGE  2
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+000B   160B           00031         bsf     INTCON,4
+000C   108B           00032         bcf     INTCON,1
+000D   1683           00033         bsf     STATUS,5
+000E   3001           00034         movlw   b'00000001'
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+000F   0086           00035         movwf   TRISB
+0010   3000           00036         movlw   b'00000'
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+0011   0085           00037         movwf   TRISA
+0012   1283           00038         bcf     STATUS,5
+0013   307D           00039         movlw   b'01111101'
+0014   00B4           00040         movwf   COUNTA
+0015   3063           00041         movlw   b'01100011'
+0016   00B5           00042         movwf   COUNTB
+                      00043         
+                      00044 
+Warning[207]: Found label after column 1. (loop1)
+0017                  00045         loop1
+0017   0820           00046         movf    TEMP,0
+0018   2???           00047         goto    loop1
+                      00048           
+                      00049             
+                      00050             
+Warning[207]: Found label after column 1. (led)
+0019                  00051         led
+0019   3001           00052             movlw       b'00001'
+001A   0085           00053             movwf       PORTA
+001B   2???           00054             call        delay1
+001C   2???           00055             call        delay2
+001D   3000           00056             movlw       b'00000'
+001E   0085           00057             movwf       PORTA
+                      00058             
+001F   0008           00059             return
+                      00060             
+                      00061         
+                      00062             
+Warning[207]: Found label after column 1. (delay1)
+0020                  00063         delay1
+                      00064         
+Warning[207]: Found label after column 1. (loop2)
+0020   0BB0           00065             loop2    decfsz  COUNT1,1
+0021   2???           00066                      goto        loop2
+0022   0BB1           00067                      decfsz      COUNT2,1
+0023   2???           00068                      goto loop2
+0024   0008           00069         return
+                      00070         
+Warning[207]: Found label after column 1. (delay2)
+0025                  00071         delay2
+                      00072         
+Warning[207]: Found label after column 1. (loop3)
+0025   0BB4           00073             loop3    decfsz  COUNTA,1
+0026   2???           00074                      goto        loop3
+0027   0BB5           00075                      decfsz      COUNTB,1
+MPASM 5.76                  RECORRECTION.ASM   12-11-2020  1:07:50         PAGE  3
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+0028   2???           00076                      goto loop3
+0029   0008           00077         return
+                      00078             
+Warning[205]: Found directive in column 1. (end)
+                      00079 end
+MPASM 5.76                  RECORRECTION.ASM   12-11-2020  1:07:50         PAGE  4
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+C                                 00000000
+COUNT1                            00000030
+COUNT2                            00000031
+COUNTA                            00000034
+COUNTB                            00000035
+DC                                00000001
+EEADR                             00000009
+EECON1                            00000088
+EECON2                            00000089
+EEDATA                            00000008
+EEIE                              00000006
+EEIF                              00000004
+F                                 00000001
+FSR                               00000004
+GIE                               00000007
+INDF                              00000000
+INTCON                            0000000B
+INTE                              00000004
+INTEDG                            00000006
+INTF                              00000001
+IRP                               00000007
+Main                              00000008
+NOT_PD                            00000003
+NOT_RBPU                          00000007
+NOT_TO                            00000004
+OPTION_REG                        00000081
+PCL                               00000002
+PCLATH                            0000000A
+PORTA                             00000005
+PORTB                             00000006
+PS0                               00000000
+PS1                               00000001
+PS2                               00000002
+PSA                               00000003
+RA0                               00000000
+RA1                               00000001
+RA2                               00000002
+RA3                               00000003
+RA4                               00000004
+RB0                               00000000
+RB1                               00000001
+RB2                               00000002
+RB3                               00000003
+RB4                               00000004
+RB5                               00000005
+RB6                               00000006
+RB7                               00000007
+RBIE                              00000003
+RBIF                              00000000
+RD                                00000000
+RP0                               00000005
+RP1                               00000006
+STATUS                            00000003
+MPASM 5.76                  RECORRECTION.ASM   12-11-2020  1:07:50         PAGE  5
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+T0CS                              00000005
+T0IE                              00000005
+T0IF                              00000002
+T0SE                              00000004
+TEMP                              00000020
+TMR0                              00000001
+TMR0IE                            00000005
+TMR0IF                            00000002
+TRISA                             00000085
+TRISA0                            00000000
+TRISA1                            00000001
+TRISA2                            00000002
+TRISA3                            00000003
+TRISA4                            00000004
+TRISB                             00000086
+TRISB0                            00000000
+TRISB1                            00000001
+TRISB2                            00000002
+TRISB3                            00000003
+TRISB4                            00000004
+TRISB5                            00000005
+TRISB6                            00000006
+TRISB7                            00000007
+W                                 00000000
+WR                                00000001
+WREN                              00000002
+WRERR                             00000003
+Z                                 00000002
+_CONFIG                           00002007
+_CP_OFF                           00003FFF
+_CP_ON                            0000000F
+_DEVID1                           00002006
+_FOSC_EXTRC                       00003FFF
+_FOSC_HS                          00003FFE
+_FOSC_LP                          00003FFC
+_FOSC_XT                          00003FFD
+_HS_OSC                           00003FFE
+_IDLOC0                           00002000
+_IDLOC1                           00002001
+_IDLOC2                           00002002
+_IDLOC3                           00002003
+_LP_OSC                           00003FFC
+_PWRTE_OFF                        00003FFF
+_PWRTE_ON                         00003FF7
+_RC_OSC                           00003FFF
+_WDTE_OFF                         00003FFB
+_WDTE_ON                          00003FFF
+_WDT_OFF                          00003FFB
+_WDT_ON                           00003FFF
+_XT_OSC                           00003FFD
+__16F84A                          00000001
+delay1                            00000020
+delay2                            00000025
+MPASM 5.76                  RECORRECTION.ASM   12-11-2020  1:07:50         PAGE  6
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+led                               00000019
+loop1                             00000017
+loop2                             00000020
+loop3                             00000025
+
+Errors   :     0
+Warnings :    20 reported,     0 suppressed
+Messages :     2 reported,     0 suppressed
+
+

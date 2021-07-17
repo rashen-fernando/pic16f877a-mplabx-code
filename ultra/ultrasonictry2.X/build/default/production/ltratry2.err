@@ -1,0 +1,7 @@
+Warning[205] E:\E-16-103\ULTRA\ULTRASONICTRY2.X\LTRATRY2.ASM 1 : Found directive in column 1. (processor)
+Warning[205] E:\E-16-103\ULTRA\ULTRASONICTRY2.X\LTRATRY2.ASM 3 : Found directive in column 1. (org)
+Message[302] E:\E-16-103\ULTRA\ULTRASONICTRY2.X\LTRATRY2.ASM 38 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] E:\E-16-103\ULTRA\ULTRASONICTRY2.X\LTRATRY2.ASM 40 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] E:\E-16-103\ULTRA\ULTRASONICTRY2.X\LTRATRY2.ASM 41 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] E:\E-16-103\ULTRA\ULTRASONICTRY2.X\LTRATRY2.ASM 90 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Warning[207] E:\E-16-103\ULTRA\ULTRASONICTRY2.X\LTRATRY2.ASM 102 : Found label after column 1. (loop2)

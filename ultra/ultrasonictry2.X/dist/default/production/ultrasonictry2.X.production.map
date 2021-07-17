@@ -1,0 +1,50 @@
+MPLINK 5.08, LINKER
+Linker Map File - Created Sat Dec 26 14:32:25 2020
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x000002
+                   .cinit    romdata   0x000001    program   0x000004
+                   .org_1       code   0x000004    program   0x000066
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000002      
+                            0x000004    0x000036      
+            54 out of 8454 program addresses used, program memory utilization is 0%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                CHECKECHO   0x00001d    program     static E:\E-16-103\ultra\ultrasonictry2.X\ltratry2.asm
+                     Main   0x000007    program     static E:\E-16-103\ultra\ultrasonictry2.X\ltratry2.asm
+                STARTIMER   0x000018    program     static E:\E-16-103\ultra\ultrasonictry2.X\ltratry2.asm
+               TRIGGERSET   0x000024    program     static E:\E-16-103\ultra\ultrasonictry2.X\ltratry2.asm
+             _.org_1_0019   0x000019    program     static E:\E-16-103\ultra\ultrasonictry2.X\ltratry2.asm
+                    delay   0x000032    program     static E:\E-16-103\ultra\ultrasonictry2.X\ltratry2.asm
+                    loop1   0x000013    program     static E:\E-16-103\ultra\ultrasonictry2.X\ltratry2.asm
+                    loop2   0x000034    program     static E:\E-16-103\ultra\ultrasonictry2.X\ltratry2.asm
+              timerconfig   0x000028    program     static E:\E-16-103\ultra\ultrasonictry2.X\ltratry2.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                     Main   0x000007    program     static E:\E-16-103\ultra\ultrasonictry2.X\ltratry2.asm
+                    loop1   0x000013    program     static E:\E-16-103\ultra\ultrasonictry2.X\ltratry2.asm
+                STARTIMER   0x000018    program     static E:\E-16-103\ultra\ultrasonictry2.X\ltratry2.asm
+             _.org_1_0019   0x000019    program     static E:\E-16-103\ultra\ultrasonictry2.X\ltratry2.asm
+                CHECKECHO   0x00001d    program     static E:\E-16-103\ultra\ultrasonictry2.X\ltratry2.asm
+               TRIGGERSET   0x000024    program     static E:\E-16-103\ultra\ultrasonictry2.X\ltratry2.asm
+              timerconfig   0x000028    program     static E:\E-16-103\ultra\ultrasonictry2.X\ltratry2.asm
+                    delay   0x000032    program     static E:\E-16-103\ultra\ultrasonictry2.X\ltratry2.asm
+                    loop2   0x000034    program     static E:\E-16-103\ultra\ultrasonictry2.X\ltratry2.asm
+
+

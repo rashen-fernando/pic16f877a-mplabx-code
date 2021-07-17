@@ -1,0 +1,50 @@
+MPLINK 5.08, LINKER
+Linker Map File - Created Thu Dec 31 18:32:13 2020
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x000002
+                   .cinit    romdata   0x000001    program   0x000004
+                   .org_1       code   0x000004    program   0x00006a
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000002      
+                            0x000004    0x000038      
+            56 out of 8454 program addresses used, program memory utilization is 0%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                CHECKECHO   0x00001f    program     static E:\E-16-103\ultrasonic test.X\test.asm
+                     Main   0x000007    program     static E:\E-16-103\ultrasonic test.X\test.asm
+                STARTIMER   0x00001a    program     static E:\E-16-103\ultrasonic test.X\test.asm
+               TRIGGERSET   0x000026    program     static E:\E-16-103\ultrasonic test.X\test.asm
+             _.org_1_001B   0x00001b    program     static E:\E-16-103\ultrasonic test.X\test.asm
+                    delay   0x000034    program     static E:\E-16-103\ultrasonic test.X\test.asm
+                    loop1   0x000015    program     static E:\E-16-103\ultrasonic test.X\test.asm
+                    loop2   0x000036    program     static E:\E-16-103\ultrasonic test.X\test.asm
+              timerconfig   0x00002a    program     static E:\E-16-103\ultrasonic test.X\test.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                     Main   0x000007    program     static E:\E-16-103\ultrasonic test.X\test.asm
+                    loop1   0x000015    program     static E:\E-16-103\ultrasonic test.X\test.asm
+                STARTIMER   0x00001a    program     static E:\E-16-103\ultrasonic test.X\test.asm
+             _.org_1_001B   0x00001b    program     static E:\E-16-103\ultrasonic test.X\test.asm
+                CHECKECHO   0x00001f    program     static E:\E-16-103\ultrasonic test.X\test.asm
+               TRIGGERSET   0x000026    program     static E:\E-16-103\ultrasonic test.X\test.asm
+              timerconfig   0x00002a    program     static E:\E-16-103\ultrasonic test.X\test.asm
+                    delay   0x000034    program     static E:\E-16-103\ultrasonic test.X\test.asm
+                    loop2   0x000036    program     static E:\E-16-103\ultrasonic test.X\test.asm
+
+
